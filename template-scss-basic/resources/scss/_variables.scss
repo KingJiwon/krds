@@ -142,18 +142,76 @@ $info-70: #173e99;
 $info-80: #0c1f4d;
 $info-90: #040a1a;
 
-$fontSize: 17px;
-$fontFamily: "Noto Sans KR", sans-serif;
+// $fontSize: 17px;
+$font-size-root: 62.5% !default; //10px 1rem으로 설정
+$fontFamily: 'Pretendard GOV Variable', 'Pretendard GOV', -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+
+$font-size: (
+    sizes: (
+        display: (
+            'sm': '4rem',
+            'md': '5rem',
+            'lg': '6.6rem',
+        ),
+        heading: (
+            'sm': '3.2rem',
+            'md': '4rem',
+            'lg': '5rem',
+        ),
+        title: (
+            'xsm': '1.5rem',
+            'sm': '1.7rem',
+            'md': '1.9rem',
+            'lg': '2.1rem',
+            'xlg': '2.5rem',
+            'xxlg': '3.2rem',
+        ),
+        body: (
+            'sm': '1.5rem',
+            'md': '1.7rem',
+            'lg': '1.9rem',
+        ),
+        link: (
+            'sm': '1.5rem',
+            'md': '1.7rem',
+            'lg': '1.9rem',
+        ),
+        detail: (
+            'sm': '1.3rem',
+            'md': '1.5rem',
+            'lg': '1.7rem',
+        ),
+        label: (
+            'xsm': '1.3rem',
+            'sm': '1.5rem',
+            'md': '1.7rem',
+            'lg': '1.9rem',
+        ),
+    ),
+) !default;
 
 // 반응형 미디어 쿼리
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1280px;
-$breakpoint-xxl: 1440px;
+$breakpoint-sm: 600px !default;
+$breakpoint-md: 1024px !default;
+$breakpoint-lg: 1920px !default;
 
 // layout
 $hdH: 60px;
 $hdH-xl: 80px;
 
 $ftH: 70px;
+
+// spacer
+$spacer-0: 0;
+$spacer-1: 0.2rem;
+$spacer-2: 0.4rem;
+$spacer-3: 0.8rem;
+$spacer-4: 1.2rem;
+$spacer-5: 1.6rem;
+$spacer-6: 2rem;
+$spacer-7: 2.4rem;
+$spacer-8: 3.2rem;
+$spacer-9: 4rem;
+$spacer-10: 4.8rem;
